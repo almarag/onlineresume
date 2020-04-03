@@ -44,7 +44,7 @@ const ContentEx = ({ classes }) => (
     <br />
     <br />
     <Typography weight={"bold"} variant={"h5"} gutterBottom>
-      Technologies
+      Technologies & Skills
     </Typography>
     <Typography component={"div"}>
       <Icon classes={{root: classes.iconRoot}}>
