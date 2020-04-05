@@ -24,13 +24,6 @@ const ContactForm = () => {
             ref="form"
             onSubmit={handleSubmit}
         >
-            <TextValidator
-                onChange={handleChange}
-                name="email"
-                value={email}
-                validators={['required', 'isEmail']}
-                errorMessages={['this field is required', 'email is not valid']}
-            />
             <TextField id="email" label="email" style={{ width: "95%" }} />
             <br />
             <br />

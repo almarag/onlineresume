@@ -9,14 +9,14 @@ import FolderIcon from "@material-ui/icons/Folder"
 import PeopleIcon from "@material-ui/icons/People"
 
 const list = [
-  {
-    primaryText: "Download My Resume",
-    icon: <FolderIcon />
-  },
-  {
-    primaryText: "Skills",
-    icon: <PeopleIcon />
-  },
+  // {
+  //   primaryText: "Download My Resume",
+  //   icon: <FolderIcon />
+  // },
+  // {
+  //   primaryText: "Skills",
+  //   icon: <PeopleIcon />
+  // },
   // {
   //   primaryText: "Starred",
   //   icon: "star"
