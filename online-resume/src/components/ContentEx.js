@@ -4,10 +4,11 @@ import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Icon from '@material-ui/core/Icon'
 import Grid from '@material-ui/core/Grid'
-import { makeStyles } from '@material-ui/styles'
 import Link from '@material-ui/core/Link'
 import ContactForm from './ContactForm'
 import Box from '@material-ui/core/Box'
+import Skills from '../components/Skills'
+
 
 const styles = ({ breakpoints }) => ({
   root: {
@@ -29,7 +30,7 @@ const styles = ({ breakpoints }) => ({
   }
 });
 
-const ContentEx = ({ classes }) => (
+const ContentEx = ({ classes, skills }) => (
   <div className={classes.root}>
     <Typography variant={"overline"}>ABOUT ME</Typography>
     <Typography weight={"bold"} variant={"h4"} gutterBottom>
@@ -50,86 +51,7 @@ const ContentEx = ({ classes }) => (
     <Typography weight={"bold"} variant={"h5"} gutterBottom>
       Main Technologies & Skills
     </Typography>
-    <Grid container spacing={3}>
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/dotnet-icon.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        3+ years of experience with .NET Core (C#)<br />
-        6+ years of experience with .NET Framework (v3.5 to v4.7)<br />
-        Technologies: Entity Framework, Windows Communication Foundation (WCF),
-        WebForms, ASP.NET MVC, WebApi
-      </Grid>
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/javascript.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        20+ years of experience with Javascript programming<br />
-        Technologies: NodeJS, Prototype, JQuery, React, AngularJS
-      </Grid>
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/Amazon_Web_Services_Logo.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        1+ years of experience with AWS<br />
-        Technologies: Lambda, API Gateway, SQS, SNS, S3
-      </Grid>
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/PHP-logo.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        11+ years of experience with PHP<br />
-        Technologies: Laravel, Wordpress, Yii Framework, Zend
-      </Grid>      
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/mysql.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        20+ years of experience with MySQL database server<br />
-      </Grid>      
-      <Grid item xs={3} style={{margin: 'auto'}}>
-        <Icon classes={{root: classes.iconRoot}}>
-          <img 
-            className={classes.imageIcon} 
-            src="/static/svg/microsoft-sql-server.svg" 
-            width="100"
-            />
-        </Icon>
-      </Grid>
-      <Grid item xs={9} style={{margin: 'auto'}}>
-        10+ years of experience with SQL Server database server<br />
-      </Grid> 
-    </Grid>
+    <Skills classes={classes} />
     <br />
     <br />
     <Typography weight={"bold"} variant={"h5"} gutterBottom>
