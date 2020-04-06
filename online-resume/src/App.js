@@ -29,6 +29,7 @@ import HeaderEx from './components/HeaderEx'
 import NavHeaderEx from  './components/NavHeaderEx'
 import NavContentEx from  './components/NavContentEx'
 import ContentEx from './components/ContentEx'
+import { getSkills } from './services/apiservices'
 
 const presets = {
   createDefaultLayout: defaultLayoutPreset,
@@ -38,7 +39,6 @@ const presets = {
   createCozyLayout: cozyLayoutPreset,
   createMuiTreasuryLayout: muiTreasuryPreset
 }
-
 
 function App() {
   const [loading, setLoading] = useState(false);
